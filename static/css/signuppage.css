@@ -1,0 +1,108 @@
+/* row1 */
+
+.main-contsiner{
+    background-color: #ececec;
+    margin-bottom: 200px;
+    padding-bottom: 10px;
+}
+.container{
+    background-color: white;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    
+}
+
+#hed1{
+    text-align: center;
+    /* font-size :1.5em;This will result in a font size of 24 pixels (1.5 * 16) for h3 */
+}
+.first-sentence{
+    padding-top: 6px;
+    padding-bottom: -10px;
+    font-size: 23px;
+    font-weight: 650;
+    font-style:normal;
+}
+
+#h1{
+    font-size: 45px;
+    font-weight: 650;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    text-align: center;
+    /* font-style:italic; */
+}
+.E{
+    color: #fea022;
+}
+.minus,.shoppers{
+    color: #b8b5af;;
+}
+
+h3{
+    font-size :1.5em;
+}
+
+#fname ,#surname{
+    padding: 6px;
+    width:188px; 
+    /* border-radius: 3px; */
+     
+}
+input[type=password]{
+    width: 380px;
+    margin-top: 15px;
+    padding: 6px;
+    
+}
+.input-container{
+    margin-left: 3px;
+    border-radius: 5px;
+
+}
+.row2{
+    margin-left: 3px;    
+}
+
+#contactInput{
+    width: 380px;
+    margin-top: 15px;
+    padding: 6px;
+    border-radius: 5px; 
+    border-color: black;
+}
+
+
+#contactInput:focus {
+    box-shadow:none;
+}
+#gender,#para{
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: -15px;
+}
+#date{
+    margin-top: -15px;
+}
+.radio-container{
+    display: flex;
+    
+}
+.radio-container div{
+    margin-right: 20px;
+    /* padding-top: -50px; */
+}
+.paragraph-content{
+    font-size: 11px;
+}
+.signup-btn{
+    text-align: center;
+}
+.signup-btn button{
+    background-color: green;
+    color: white;
+    width: 200px;
+    border: none;
+    
+}
+
