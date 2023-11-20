@@ -1,0 +1,44 @@
+    {% extends 'master.html' %}
+
+    {% block body %}
+    <style>
+        .form-group{
+            margin-top: 15px;
+        }
+        .d-flex{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container{
+            margin-top: -10px;
+        }
+
+    </style>
+    <section id="form"><!--form-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <div class="signup-form"><!--sign up form-->
+                        <h2>New User Signup!</h2>
+                        <form method="post">
+                            {% csrf_token %}
+                            {% for field in form %}
+                            {{ field.errors }}
+                            <!-- <p>{{ field.label_tag }} {{ field }}</p>? # if u want to name for input field u can use this -->
+                            <p>{{ field }}</p>
+                            {% endfor %}
+                            <div class="form-group">
+                                <div class="d-flex">
+                                    <button type="submit" class="btn btn-default">Signup</button>
+                                    <a href="{% url 'login' %}" class="btn btn-link">If you have already an account</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!--/sign up form-->
+                </div>
+            </div>
+        </div>
+    </section><!--/form-->
+
+
+    {% endblock %}

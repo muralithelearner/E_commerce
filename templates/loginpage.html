@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/css/loginpage.css" rel="stylesheet">
+    {% include 'cdnlines.html' %}
+    <title>Document</title>
+
+</head>
+<body style="background-color: #ececec;">
+    <!-- <h1 class="text-center" style="color:#0866ff">Login Here</h1> -->
+    <div class="col-md-12 mcontainer1 border">
+        <div class="container1">
+                <div class="Title">
+                    <img src="static/images/home/logo.png" alt="image not available">
+                    <!-- <h1>E</h1> 
+                    <h1>-SHOPPER</h1> -->
+                </div>
+    <div class="offset-md-7  col-md-4 container2 border">
+        <div class="row my-row">
+            <div class="col-md-12">
+                <form method="POST" action="">
+                    {{ form.as_p }}  <!-- Render form fields -->
+                    {% csrf_token %}
+                    <input type="text" name="username" id="" class="form-control" placeholder="Username" required>
+                    <input type="password" name="password" id="" class="form-control" placeholder="Password" required>
+                    <center>
+                        <div class="custom-button-submitt">
+                            <input type="submit" name="" id="submit" value="Log in" >
+                        </div>
+                        <div>
+                            <a href="{% url 'password_rs_form'%}">Forgotten password?</a>
+
+                        </div>
+                        <hr>
+                        <div class="custom-button-create">
+                            
+                                <a href="{% url 'signup'%}"><input type="button" id="create" value="Creat new account" class="mt-3 mb-3"></a>       
+
+                    </center>
+                </form>
+
+            </div>
+
+        </div>
+
+        </div>
+    </div>
+</div>    
+</body>
+</html>
+
